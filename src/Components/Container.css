@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+
+.box_main {
+  width: 100%;
+  height: 1400px;
+  background-color: black;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+  text-align: center;
+  color: white;
+  /* border: 2px solid red; */
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  line-height: 25px;
+  text-align: center;
+}
+
+.box img {
+  width: 300px;
+}
+
+.box h1 {
+  font-family: "Lora", serif;
+  font-size: 25px;
+}
+
+.box p {
+  font-size: 13px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+}
+
+.btn_container {
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px 10px;
+  background-color: rgb(45, 176, 228);
+  color: white;
+  outline: none;
+  border: none;
+}
+.btn_container:hover {
+  background-color: rgb(6, 137, 189);
+}
+
+.three_boxes {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.box_one img {
+  width: 90%;
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+.box_one:hover {
+  cursor: pointer;
+  border-bottom: 5px solid rgb(45, 176, 228);
+}
+
+.ending > h1 {
+  font-family: "Luxurious Roman", cursive;
+}
+
+@media all and (max-width: 1000px) {
+  .box {
+    width: 85%;
+  }
+  .ending > img {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .box_main {
+    height: 1300px;
+    padding: 50px;
+  }
+  .box {
+    width: 100%;
+  }
+  .three_boxes {
+    flex-direction: column;
+    height: 40%;
+  }
+  .ending > img {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .box_main {
+    padding: 30px;
+  }
+  .ending > img {
+    width: 300px;
+  }
+}

@@ -1,0 +1,9 @@
+.banner{
+    height: 650px;
+}
+
+@media all and (max-width: 1000px) {
+    .banner{
+        height: 205px;
+    }
+}
